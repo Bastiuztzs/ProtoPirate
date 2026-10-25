@@ -98,7 +98,7 @@ def ProtoPirateEmbed_plugins(
         apptype=FlipperAppType.PLUGIN,
         entry_point="protopirate_am_plugin_ep",
         requires=["proto_pirate"],
-        cdefines=["PROTOPIRATE_PROTOCOL_RX_ONLY=1"],
+        cdefines=["PROTOPIRATE_PROTOCOL_RX_ONLY=0"],
         sources=[
             "protocols/plugins/protopirate_am_plugin.c",
             "protocols/protocols_common.c",
